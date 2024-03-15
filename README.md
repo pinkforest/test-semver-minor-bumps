@@ -16,6 +16,7 @@ Using default resolver via workspace (that uses "2")
 
 ## dep_410
 
+```
 $ cargo tree
     Updating crates.io index
 bin_curve_410 v4.1.0 (/home/foobar/code/version-test/dep_410)
@@ -37,9 +38,11 @@ bin_curve_410 v4.1.0 (/home/foobar/code/version-test/dep_410)
     ├── platforms v3.3.0
     └── rustc_version v0.4.0
         └── semver v1.0.22
+```
 
 ## dep_400
 
+```
 $ cargo tree
 bin_400 v4.0.0 (/home/foobar/code/version-test/dep_400)
 └── curve25519-dalek v4.1.2
@@ -60,3 +63,4 @@ bin_400 v4.0.0 (/home/foobar/code/version-test/dep_400)
     ├── platforms v3.3.0
     └── rustc_version v0.4.0
         └── semver v1.0.22
+```
