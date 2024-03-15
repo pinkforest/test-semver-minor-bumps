@@ -3,8 +3,29 @@
 version = 3
 
 [[package]]
+name = "bin_4"
+version = "4.0.0"
+dependencies = [
+ "curve25519-dalek",
+]
+
+[[package]]
 name = "bin_400"
 version = "4.0.0"
+dependencies = [
+ "curve25519-dalek",
+]
+
+[[package]]
+name = "bin_curve_40"
+version = "4.1.0"
+dependencies = [
+ "curve25519-dalek",
+]
+
+[[package]]
+name = "bin_curve_41"
+version = "4.1.0"
 dependencies = [
  "curve25519-dalek",
 ]
