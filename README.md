@@ -4,7 +4,11 @@ curve25519-dalek has 4.0 and 4.1
 
 curve25519-dalek may bump MSRV SemVer-exempt as minor version bump
 
-This means in order to control SemVer bumps manifest needs 
+This means in order to control SemVer bumps is not possible w/o bounds
+
+Someone  perhaps could think 4.0.0 restricts to >= 4.0.0, <= 4.1 ..
+
+But this isn't the case ...
 
 Using default resolver via workspace (that uses "2")
 
@@ -15,8 +19,6 @@ Using default resolver via workspace (that uses "2")
 | dep_4   | `curve25519-dalek = { version = "4" }`     |
 | dep_40  | `curve25519-dalek = { version = "4.0" }    |
 | dep_41  | `curve25519-dalek = { version = "4.1" }    |
-
-By specifying X.Y.Z will work for gating the minor version
 
 ## dep_410 - Gets 4.1
 
@@ -45,9 +47,9 @@ bin_curve_410 v4.1.0 (/home/foobar/code/version-test/dep_410)
         └── semver v1.0.22
 ```
 
-## dep_400 - Gets 4.0
+## dep_400 - Gets 4.1 :(
 
-"4.0.0" gets 4.0.LATEST
+"4.0.0" gets 4.1.LATEST :(
 ```
 $ cargo tree
 bin_400 v4.0.0 (/home/foobar/code/version-test/dep_400)
